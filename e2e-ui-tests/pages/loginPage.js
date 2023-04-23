@@ -5,11 +5,9 @@ exports.LoginPage = class LoginPage extends BasePage {
         super(page, '/sign-in');
         this.email = page.locator("[placeholder='Login']");
         this.password = page.locator("[type='password']");
-
-        this.password = page.locator("[type='password']");
         this.loginButton = page.getByRole('button');
-        
-        
+
+
     }
 
     async login(userEmail, userPassword) {
@@ -17,4 +15,7 @@ exports.LoginPage = class LoginPage extends BasePage {
         await this.password.type(userPassword);
         await this.loginButton.click();
     }
+
+
+
 }

@@ -1,8 +1,8 @@
 const users = {
     stage: {
         user: {
-            email: 'testauto@test.com',
-            password: 'Tester_123',
+            email: 'test-auto@test.com',
+            password: '123$qwe',
         },
         admin: {
             email: 'admin01.nolimit',

@@ -16,7 +16,7 @@ test.describe('Rgistration tests', () => {
         await registerPage.open();
     });
 
-    test.only('Registration with valid data', async ({ page }) => {
+    test('Registration with valid data', async ({ page }) => {
         await registerPage.register(userData.generatedFullName, userData.generatedEmail, userData.password);
         //await expect(page.locator("[class='logo']")).toBeVisible;
         await expect(page).toHaveURL('http://omega-stage.qa.nolimit.school/sign-in');
